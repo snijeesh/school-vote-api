@@ -1,1 +1,0 @@
-# school-vote-api
