@@ -22,7 +22,12 @@ dependencies {
 	testImplementation 'org.springframework:spring-webflux'
 	testImplementation 'org.springframework.graphql:spring-graphql-test'
 }
+tasks.register("run") {
+	group = "application"
+	description = "Runs the Spring Boot application with the dev profile"
 
+	finalizedBy("bootRun")
+}
 tasks.named('test') {
 	useJUnitPlatform()
 }
