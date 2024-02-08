@@ -10,6 +10,7 @@ public class LoginController {
 
     @QueryMapping
     public CompletableFuture<String> login() {
+        System.out.println("called...");
         return CompletableFuture.supplyAsync(() -> {return "done";});
     }
 
