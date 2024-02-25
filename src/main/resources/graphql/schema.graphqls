@@ -1,5 +1,5 @@
 type Query {
-    login: [User]
+    login(userName: String!, password: String!): User
 }
 
 type User {
