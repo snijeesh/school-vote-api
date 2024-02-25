@@ -5,4 +5,8 @@ type Query {
 type User {
     userName: String
     password: String
+    name: String
+    role: String
+    token: String
+    home: String
 }
