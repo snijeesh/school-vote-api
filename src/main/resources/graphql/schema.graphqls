@@ -5,8 +5,10 @@ type Query {
 type User {
     userName: String
     password: String
-    name: String
+    firstName: String
+    lastName: String
     role: String
     token: String
     home: String
+    email: String
 }
