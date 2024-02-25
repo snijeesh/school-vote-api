@@ -1,3 +1,8 @@
 type Query {
-    login: String
+    login: [User]
+}
+
+type User {
+    userName: String
+    password: String
 }
