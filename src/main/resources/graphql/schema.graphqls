@@ -2,6 +2,21 @@ type Query {
     login(userName: String!, password: String!): User
 }
 
+type Mutation {
+    register(userInput: UserInput!): Boolean
+}
+
+input UserInput {
+    userName: String
+    password: String
+    firstName: String
+    lastName: String
+    role: String
+    token: String
+    home: String
+    email: String
+}
+
 type User {
     userName: String
     password: String
